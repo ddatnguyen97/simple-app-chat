@@ -1,0 +1,19 @@
+<div class="loginBar">
+  <button *ngIf = "!checkUser" (click)="login()">Login with Google</button>
+  <button *ngIf = "checkUser" (click)="logout()">Logout</button>
+  <p *ngIf="_user" >{{_user.displayName}}</p>
+</div>
+
+
+<div class="messageBox">
+  <div class="inputTab">
+    <input [(ngModel)]="message" placeholder="Type here...">
+    <button (click)="sendMessage()">Send</button>
+  </div>
+  <h2>Your messages: </h2>
+  <div class="outputTab">
+    <p *ngFor="let mess of chats">{{ mess.message }}</p>
+    <p *ngFor="let mess of chats">{{ mess.mess }}</p>
+    </div>
+</div>
+

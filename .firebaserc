@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "chatwithf-9085f": {
+      "hosting": {
+        "ChatWithF": [
+          "chatwithf-9085f"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "chatwithf-9085f"
+  }
+}
